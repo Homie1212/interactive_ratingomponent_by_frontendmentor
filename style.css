@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: relative;
+}
+.btnive{
+    background-color: rgba(238, 122, 27, 0.959) !important;
+    color: #fff !important;
+}
+.hide{
+    display: none;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#container section{
+    width: 405px;
+    background-color: rgb(29, 29, 37);
+    padding: 30px;
+    border-radius: 20px;
+}
+#container section .imc{
+    background-color:rgb(22, 22, 31) ;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+#container section h3{
+    margin-bottom: 15px;
+}
+#container section p{
+    line-height: 1.4;
+    color: rgb(179, 175, 175);
+}
+#container section .btn{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+#container section .btn button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(22, 22, 31);
+    color: rgb(179, 175, 175);
+}
+#container section button{
+    background-color:rgba(238, 122, 27, 0.959);
+    width: 100%;
+   border: none;
+   height: 30px;
+   border-radius: 20px;
+   margin: 10px 0;
+   color: white;
+}
+#container section button:hover{
+    color:rgba(238, 122, 27, 0.959) ;
+    background-color: #ffffff;
+}
+#container section .btn button:hover{
+    background-color: rgba(238, 122, 27, 0.959);
+    color: #fff;
+}
+#modal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+#modal .fle{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#modal .fle .cron{
+    background-color:rgb(29, 29, 37);
+    width: 405px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+#modal .fle .cron .tnksmsg{
+    color:rgba(238, 122, 27, 0.959);
+    background-color:rgb(22, 22, 31);
+    border-radius: 20px;
+    padding: 10px;
+    width: 70%;
+    margin: 20px auto;
+}
+#modal .fle .cron  h1{
+    margin: 10px 0;
+    color: rgb(179, 175, 175);
+}
+.rep{
+    color: rgb(179, 175, 175);
+}
+@media (max-width :480px){
+    #modal .fle .cron,
+    #container section{
+        width: 350px;
+    }
+}
